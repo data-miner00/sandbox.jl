@@ -92,13 +92,13 @@ end
 end
 
 function rotate_v4(shift::Int, code::Char)
-    c_int = transcode(Uint8, string(code))
+    c_int = transcode(UInt8, string(code))
     shift = UInt8(mod(shift, 26))
     Char(transcode(UInt32, rotate_v4.(shift, c_int))...)
 end
 
 function rotate_v4(shift::Int, code::String)
-    c_int = transcode(Uint8, code)
+    c_int = transcode(UInt8, code)
     shift = UInt8(mod(shift, 26))
     transcode(String, rotate_v4.(shift, c_int))
 end
