@@ -10,3 +10,24 @@ A playground for tinkering with Juliacs.
 - [How to create project in Julia and Juno?](https://stackoverflow.com/questions/56643810/how-to-create-project-in-julia-and-juno)
 - [How to setup Project Environment in Julia](https://towardsdatascience.com/how-to-setup-project-environments-in-julia-ec8ae73afe9c)
 - [Julia Tutorial](https://www.youtube.com/watch?v=sE67bP2PnOo)
+- [DataFrames | ML+](https://www.machinelearningplus.com/julia/dataframes-in-julia/)
+- [DataFrames Docs](https://dataframes.juliadata.org/stable/man/getting_started/)
+- [Juliapackages](https://juliapackages.com/)
+- [Pkg.jl](https://pkgdocs.julialang.org/v1/)
+
+## Libraries
+
+- [ArgParse.jl](https://carlobaldassi.github.io/ArgParse.jl/latest/index.html)
+
+## Company
+
+- [JuliaHub](https://juliahub.com/)
+
+## REPL Modes
+
+Julia REPL is available for various of modes, simply hit the keys in the repl to switch between the modes. To return to the `julia` mode, simply hit `backspace` to return.
+
+- `julia`
+- `pkg`: `]`
+- `help`: `?`
+- `shell`: `;`
