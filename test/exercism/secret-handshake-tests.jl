@@ -2,74 +2,76 @@ using Test
 
 include("../../src/exercism/secret-handshake.jl")
 
-@testset "wink for 1" begin
+@testset "Secret Handshake" begin
+    @testset "wink for 1" begin
 
-    @test secret_handshake(1) == ["wink"]
+        @test secret_handshake(1) == ["wink"]
 
-end
+    end
 
-@testset "double blink for 10" begin
+    @testset "double blink for 10" begin
 
-    @test secret_handshake(2) == ["double blink"]
+        @test secret_handshake(2) == ["double blink"]
 
-end
+    end
 
-@testset "close your eyes for 100" begin
+    @testset "close your eyes for 100" begin
 
-    @test secret_handshake(4) == ["close your eyes"]
+        @test secret_handshake(4) == ["close your eyes"]
 
-end
+    end
 
-@testset "jump for 1000" begin
+    @testset "jump for 1000" begin
 
-    @test secret_handshake(8) == ["jump"]
+        @test secret_handshake(8) == ["jump"]
 
-end
+    end
 
-@testset "combine two actions" begin
+    @testset "combine two actions" begin
 
-    @test secret_handshake(3) == ["wink", "double blink"]
+        @test secret_handshake(3) == ["wink", "double blink"]
 
-end
+    end
 
-@testset "reverse two actions" begin
+    @testset "reverse two actions" begin
 
-    @test secret_handshake(19) == ["double blink", "wink"]
+        @test secret_handshake(19) == ["double blink", "wink"]
 
-end
+    end
 
-@testset "reversing one action gives the same action" begin
+    @testset "reversing one action gives the same action" begin
 
-    @test secret_handshake(24) == ["jump"]
+        @test secret_handshake(24) == ["jump"]
 
-end
+    end
 
-@testset "reversing no actions still gives no actions" begin
+    @testset "reversing no actions still gives no actions" begin
 
-    @test secret_handshake(16) == []
+        @test secret_handshake(16) == []
 
-end
+    end
 
-@testset "all possible actions" begin
+    @testset "all possible actions" begin
 
-    @test secret_handshake(15) == ["wink", "double blink", "close your eyes", "jump"]
+        @test secret_handshake(15) == ["wink", "double blink", "close your eyes", "jump"]
 
-end
+    end
 
-@testset "reverse all possible actions" begin
+    @testset "reverse all possible actions" begin
 
-    @test secret_handshake(31) == ["jump", "close your eyes", "double blink", "wink"]
+        @test secret_handshake(31) == ["jump", "close your eyes", "double blink", "wink"]
 
-end
+    end
 
-@testset "do nothing for zero" begin
+    @testset "do nothing for zero" begin
 
-    @test secret_handshake(0) == []
+        @test secret_handshake(0) == []
 
-end
+    end
 
-@testset "do nothing if lower 5 bits not set" begin
+    @testset "do nothing if lower 5 bits not set" begin
 
-    @test secret_handshake(32) == []
+        @test secret_handshake(32) == []
 
+    end
 end
