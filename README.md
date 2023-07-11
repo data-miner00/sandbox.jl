@@ -18,6 +18,7 @@ A playground for tinkering with Juliacs.
 ## Libraries
 
 - [ArgParse.jl](https://carlobaldassi.github.io/ArgParse.jl/latest/index.html)
+- [Julia Plots](https://docs.juliaplots.org/stable/)
 
 ## Company
 
@@ -31,3 +32,15 @@ Julia REPL is available for various of modes, simply hit the keys in the repl to
 - `pkg`: `]`
 - `help`: `?`
 - `shell`: `;`
+
+## Add Packages
+
+Switch to package mode
+
+```
+# Add one package
+(workspace) pkg>add DataFrames
+
+# Add multiple packages
+(workspace) pkg>add DataFrames,JSON,CSV
+```
