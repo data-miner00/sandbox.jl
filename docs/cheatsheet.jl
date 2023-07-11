@@ -548,8 +548,10 @@ try
     else
         println(val)
     end
-catch e
-    println(e)
+catch ex
+    println("Something went wrong: $ex")
+finally
+    print("Always execute")
 end
  
 # ----- FILE IO -----
