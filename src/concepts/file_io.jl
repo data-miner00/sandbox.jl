@@ -1,5 +1,5 @@
 file_path = "src/concepts/sample.txt"
-new_file = "src/concepts/new.txt"
+new_file = "data/new.txt"
 
 function readTextFile()
     file::IOStream = open(file_path)
