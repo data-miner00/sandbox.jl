@@ -3,4 +3,6 @@ activate:
 	julia --project=.
 test:
 	julia ./test/testrunner.jl
+check:
+	julia ./scripts/mod.jl
 endif
