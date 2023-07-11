@@ -409,6 +409,19 @@ f1 = parse(Float64,"1")
 println("5 + 4 = ", getSum3(5,4))
 println("5 + 4 = ", getSum3("5","4"))
  
+# mandatory named arguments
+function printRectangle(; width::Int32, height::Int32)
+    println("Height $height, width $width")
+end
+# printRectangle(1, 2) error
+printRectangle(width=1, height=2)
+
+function foo(arg1, arg2=4, arg3s...; arg4, arg5=3, arg6s...)
+    println("Arg1 $arg1, arg2 $arg2, arg3s $arg3s, arg4 $arg4, arg5 $arg5, arg6s $arg6s")
+end
+
+foo(1,2,3,4,arg4=5,arg6s=5)
+
 # ----- ANONYMOUS FUNCTIONS -----
 # Functions with no name that are used inline
 # Map applies a function to each item
