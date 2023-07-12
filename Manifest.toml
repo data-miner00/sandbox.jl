@@ -2,7 +2,7 @@
 
 julia_version = "1.8.5"
 manifest_format = "2.0"
-project_hash = "e7f97cf5f1611a0016a22b58bd87c9c57baa187e"
+project_hash = "39b5cbc63621bd844a106c185a435560a359d181"
 
 [[deps.ArgParse]]
 deps = ["Logging", "TextWrap"]
@@ -222,6 +222,12 @@ git-tree-sha1 = "cedb76b37bc5a6c702ade66be44f831fa23c681e"
 uuid = "e6f89c97-d47a-5376-807f-9c37f3926c36"
 version = "1.0.0"
 
+[[deps.MacroTools]]
+deps = ["Markdown", "Random"]
+git-tree-sha1 = "42324d08725e200c23d4dfb549e0d5d89dede2d2"
+uuid = "1914dd2f-81c6-5fcd-8719-6d5c9610ff09"
+version = "0.5.10"
+
 [[deps.Markdown]]
 deps = ["Base64"]
 uuid = "d6f4376e-aef5-505a-96c1-9c027394607a"
@@ -318,6 +324,12 @@ uuid = "de0858da-6303-5e67-8744-51eddeeeb8d7"
 [[deps.Profile]]
 deps = ["Printf"]
 uuid = "9abbd945-dff8-562f-b5e8-e1ebf5ef1b79"
+
+[[deps.PyCall]]
+deps = ["Conda", "Dates", "Libdl", "LinearAlgebra", "MacroTools", "Serialization", "VersionParsing"]
+git-tree-sha1 = "62f417f6ad727987c755549e9cd88c46578da562"
+uuid = "438e738f-606a-5dbb-bf0a-cddfbfd45ab0"
+version = "1.95.1"
 
 [[deps.REPL]]
 deps = ["InteractiveUtils", "Markdown", "Sockets", "Unicode"]
