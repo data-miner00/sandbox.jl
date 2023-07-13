@@ -1,6 +1,6 @@
 # sandbox.jl
 
-A playground for tinkering with Juliacs.
+A playground for tinkering with Julia.
 
 ## Resources
 
@@ -14,6 +14,10 @@ A playground for tinkering with Juliacs.
 - [DataFrames Docs](https://dataframes.juliadata.org/stable/man/getting_started/)
 - [Juliapackages](https://juliapackages.com/)
 - [Pkg.jl](https://pkgdocs.julialang.org/v1/)
+
+## Screencasts
+
+- [Julia 1 Fundamentals by Dan Tofan | Pluralsight](https://app.pluralsight.com/library/courses/julia-1-fundamentals/table-of-contents) ★★★★★
 
 ## Libraries
 
